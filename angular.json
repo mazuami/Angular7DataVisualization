@@ -18,14 +18,19 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
-            "assets": [
+              "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "../Angular-Practice/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "../Angular-Practice/node_modules/ag-grid/dist/styles/ag-grid.css",
+              "../Angular-Practice/node_modules/ag-grid/dist/styles/ag-theme-balham.css"
             ],
-            "scripts": []
+            "scripts": [
+              
+            ]
           },
           "configurations": {
             "production": {
@@ -57,7 +62,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Angular-Practice:build"
+            "browserTarget": "Angular-Practice:build",
+            "port":4201
           },
           "configurations": {
             "production": {

@@ -1,0 +1,14 @@
+<div class="card bg-dark text-white">
+    <div class="card-body">
+      <div class="form-group">
+      <select class="form-control"  (change)="getSelectedRegion($event)" required>
+        <option *ngFor= "let reg of regions" [ngValue]="reg.region_id"> {{ reg.region_name }}</option>
+      </select>
+      </div>
+      <highcharts-chart 
+        [Highcharts]="barChart"
+        [options]="barChartOptions"
+        style="width: 100%; height: 400px; display: block;"
+      ></highcharts-chart>
+    </div>
+  </div>

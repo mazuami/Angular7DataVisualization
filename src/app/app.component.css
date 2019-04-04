@@ -1,0 +1,52 @@
+#wrapper {
+    width:100%;
+    transition: all 0.4s ease 0s;
+    background-color:#DEDEFF;
+  }
+ .navbar {
+        background-color: #3F51B5 ;
+        overflow: hidden;
+        height:70px;
+       
+    }
+
+.nav-content-align {
+  padding: 20px 30px 20px 30px;
+}
+
+.sidebar-nav .glyphicon {
+
+  font-size: 12px;
+  float: right;
+  padding: 14px 20px 0px 0px;
+
+}
+
+
+.navbar a{
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+#transparentButton{
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;
+    overflow:hidden;
+    outline: none;
+}
+#page-content-wrapper {
+    padding-top: 80px;
+    transition: all 0.4s ease 0s;
+    background-color:rgb(241, 241, 255);
+    height: 100%;
+}
+#spaceFill {
+    padding-right: 3px;
+    padding-left:3px;
+}  
+
+.backGroundColor {
+    background-color:#DEDEFF;
+}

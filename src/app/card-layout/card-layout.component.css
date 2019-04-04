@@ -1,0 +1,34 @@
+.bg-info {
+    padding: 10px;
+    background-color: #21AAF3;
+    text-align: center;
+}
+.bg-warning {
+    padding: 10px;
+    background-color: #F3B721;
+    text-align: center;
+}
+
+.bg-success {
+    padding: 10px;
+    background-color: #21F3AD;
+    text-align: center;
+}
+
+.bg-danger {
+    padding: 10px;
+    background-color: #F18DAC;
+    text-align: center;
+}
+
+.bg-primary {
+    padding: 10px;
+    background-color: #958DF1;
+    text-align: center;
+}
+
+#boldStyle {
+    color: white;
+    font-weight: bold;
+
+}

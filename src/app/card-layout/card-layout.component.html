@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col-md-5"></div>
+  <div class="col-md-2">
+  <div class="form-group">
+    <select class="form-control"  (change)="getSelectedCurrency($event)" required>
+      <option *ngFor= "let cur of currencies" [ngValue]="cur.curr_id"> {{ cur.curr_name }}</option>
+    </select>
+  </div>
+  </div>
+  <div class="col-md-5"></div>
+</div>   
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-2 justify-content-center align-items-center section-border">
+          <div class="card bg-warning ">
+            <h4 id="boldStyle">
+              <span style="font-size:18px;">{{ asia_amt | number }}</span><span>M</span><span>  /  </span><span style="font-size:13px;">{{ asia_amt_total | number }}</span><span>M</span>
+            </h4>
+            <p>Asia</p>
+          </div>
+     </div>
+     <div class="col-md-2 justify-content-center align-items-center section-border"> 
+          <div class="card bg-info ">
+              <h4 id="boldStyle"> 
+               <span style="font-size:18px;">{{ europe_amt | number }}</span><span>M</span><span>  /  </span><span style="font-size:13px;">{{ europe_amt_total | number }}</span><span>M</span>
+              </h4>
+              <p>Europe</p>
+          </div>
+     </div>
+     <div class="col-md-2 justify-content-center align-items-center section-border"> 
+          <div class="card bg-success ">
+              <h4 id="boldStyle"> 
+                  <span style="font-size:18px;">{{ brazil_amt | number }}</span><span>M</span><span>  /  </span><span style="font-size:13px;">{{ brazil_amt_total | number }}</span><span>M</span>
+              </h4>
+              <p>Brazil</p>
+          </div>
+    </div>
+    <div class="col-md-2 justify-content-center align-items-center section-border"> 
+      <div class="card bg-danger ">
+          <h4 id="boldStyle">
+              <span style="font-size:18px;">{{ paris_amt | number }}</span><span>M</span><span>  /  </span><span style="font-size:13px;">{{ paris_amt_total | number }}</span><span>M</span>
+            </h4>
+          <p>Paris</p>
+      </div>
+    </div>
+    <div class="col-md-2 justify-content-center align-items-center section-border"> 
+        <div class="card bg-primary ">
+            <h4 id="boldStyle">
+             <span style="font-size:18px;">{{ america_amt | number }}</span><span>M</span><span>  /  </span><span style="font-size:13px;">{{ america_amt_total | number }}</span><span>M</span>
+             </h4>
+            <p>America</p>
+        </div>
+      </div>
+    <div class="col-md-1"></div> 
+ </div>   
+  
